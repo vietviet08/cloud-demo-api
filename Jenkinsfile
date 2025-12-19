@@ -24,7 +24,7 @@ pipeline {
                             echo "Building and starting API container..." && \\
                             docker compose -f ${env.COMPOSE_FILE} stop spring-boot-app || true && \\
                             docker compose -f ${env.COMPOSE_FILE} rm -f spring-boot-app || true && \\
-                            docker-compose -f ${env.COMPOSE_FILE} build spring-boot-app && \\
+                            docker compose -f ${env.COMPOSE_FILE} build spring-boot-app && \\
                             docker compose -f ${env.COMPOSE_FILE} up -d spring-boot-app && \\
                             echo "API container started successfully" && \\
                             docker compose -f ${env.COMPOSE_FILE} ps spring-boot-app
