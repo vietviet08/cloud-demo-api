@@ -4,7 +4,7 @@ pipeline {
     environment {
         EC2_HOST = 'ec2-18-141-170-131.ap-southeast-1.compute.amazonaws.com'
         EC2_USER = 'ubuntu'
-        PEM_FILE = '/var/lib/jenkins/jobs/BE/builds/sing.pem'
+        PEM_FILE = '/var/lib/jenkins/jobs/API/builds/sing.pem'
         PROJECT_DIR = '/home/ubuntu/employee/api'
         COMPOSE_FILE = '/home/ubuntu/employee/docker-compose.yml'
     }
