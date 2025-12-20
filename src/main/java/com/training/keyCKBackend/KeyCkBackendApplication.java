@@ -24,7 +24,7 @@ public class KeyCkBackendApplication {
 					)
 					.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 					.allowedHeaders("*")
-					.allowCredentials(true);
+					.allowCredentials(false);
 		}
 	};
 }
