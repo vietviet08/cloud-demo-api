@@ -20,7 +20,7 @@ public class KeyCkBackendApplication {
 		public void addCorsMappings(CorsRegistry registry) {
 			registry.addMapping("/**")
 					.allowedOrigins(
-						"https://d1je9kd18ne0qx.cloudfront.net"
+						"*"
 					)
 					.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
 					.allowedHeaders("*")
