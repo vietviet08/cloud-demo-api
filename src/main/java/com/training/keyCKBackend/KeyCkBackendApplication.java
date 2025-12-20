@@ -19,10 +19,12 @@ public class KeyCkBackendApplication {
 		@Override
 		public void addCorsMappings(CorsRegistry registry) {
 			registry.addMapping("/**")
-				.allowedOrigins("*")
-				.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
-				.allowedHeaders("*")
-				.maxAge(3600);
+					.allowedOrigins(
+						"https://d1je9kd18ne0qx.cloudfront.net"
+					)
+					.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+					.allowedHeaders("*")
+					.allowCredentials(true);
 		}
 	};
 }
